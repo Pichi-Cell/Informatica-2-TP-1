@@ -73,6 +73,7 @@ void carga_fichas(articulos_t *articulos){
         printf("Ingrese la cantidad del articulo para la sucursal %d: ", sucursal);
         scanf("%d", &articulos[articulo_index].cantidad_sucursal[sucursal-1]);
 	// Actualizacion de cantidad total
+	articulos[articulo_index].total = 0;
 	for(i=0;i<3;i++) articulos[articulo_index].total += articulos[articulo_index].cantidad_sucursal[i];        
 	
         printf("Desea ingresar otro articulo? 1-Si, 2-No");
