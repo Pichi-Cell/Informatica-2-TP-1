@@ -11,6 +11,7 @@ int main(void)
     /* Impresion de fichas cargadas*/
 	impresion_fichas(articulos);
     /* Ordenamiento */
+	ordenamiento_fichas(articulos);
     printf("\n\n###################################");
     printf("\n##############ORDENADO################");
     printf("\n################################### \n");
